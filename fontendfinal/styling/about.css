@@ -1,0 +1,359 @@
+body{
+    font-family: 'Poppins';
+}
+.people-img h4{
+    color: #3080e3;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+nav{
+    box-shadow: 0 20px 50px 0 rgb(0 0 0 / 5%)
+}
+.people-img h2{
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 48px;
+}
+.people-img p{
+    color: gray;
+    font-size: 16px;
+    margin-top: 25px;
+    line-height: 24px;
+    display: block;
+    margin-block-end: 40px;
+
+}
+.mini-info{
+    position: relative;
+    padding-left: 80px;
+    margin-top: 50px;
+    display: inline-block
+}
+.list-icon{
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    text-align: center;
+    display: block;
+    border-radius: 50%;
+    color: #3080e3;
+    font-size: 22px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-box-shadow: 0 7px 10px #0000000a;
+    box-shadow: 0 7px 10px #0000000a;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+.mini-info h4{
+    color: #151515;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+.mini-info p{
+    padding: 3px 0;
+    font-size: 15px;
+    margin: 0;
+}
+.choose-us{
+    position: relative;
+    background-color: #151515;
+    z-index: 0;
+}
+.choose-us h4{
+    color: #3080e3;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.choose-us h2{
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 48px;
+    color: #fff;
+}
+.choose-us p{
+    font-size: 16px;
+    margin-top: 25px;
+    color: #fff;
+    line-height: 24px
+    
+}
+.shp1{
+    position: absolute;
+    width: 520px;
+    height: 520px;
+    left: -184.03px;
+    top: 0;
+    z-index: -1;
+}
+.shp2{
+    position: absolute;
+    width: 665px;
+    height: 665px;
+    right: -126px;
+    bottom: -66px;
+    z-index: -1;
+}
+li{
+    position: relative;
+    margin-bottom: 45px;
+}
+.number {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3080e3;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all .4s ease-in-out;
+    font-size: 16px;}
+    .list-content {
+        display: inline-block;
+        padding: 0;
+        padding-left: 80px;
+    }
+li h3{
+    color: white;
+}
+.infoo{
+    text-align: center;
+    justify-content: center;
+}
+.card-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.sponsors{
+    padding: 60px 0;
+}
+.logo {
+    padding: 0 30px;
+}
+.our{
+    padding: 50px 0;
+}
+.number:hover{
+    background-color: orange;
+}
+.logom{
+    width: 100%;
+}
+.logolar{
+    display: flex;
+    align-items: center;
+}
+.text-long{
+    padding-block-end: 20px;
+}
+.info-us{
+    margin-top: 120px !important;
+}
+.our-team .col-lg-4{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    height: 480px;
+    width: 415px;
+    
+}
+.meet{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding-top: 10px;
+}
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+@media only screen and (max-width: 600px){
+    
+    .contact{
+		padding-bottom: 60px;
+	}
+	.for-bottom{
+		display: flex;
+   		 flex-direction: row;
+    	justify-content: center;
+	}
+	.contact h1{
+		display: flex;
+		justify-content: center;
+	}
+    .col-lg-6 img{
+        width: 460px;
+        margin: 0;
+        padding: 0;
+        margin: auto;
+    }
+    .card{
+        height: 500px;
+        margin: 20px auto;
+        justify-content: center;
+        
+    }
+    body > section.our-team > div > div > div:nth-child(1) > div > div > div.meet > p.job.mb-0{
+        padding: 0 120px;
+    }
+    .job{
+        padding: 0 125px;
+    }
+    .user{
+        padding: 0 140px;
+    }
+   
+    .social-media{
+        text-align: center;
+    }
+    .card-body{
+        display: flex;
+        flex-direction: column;
+    }
+    .sponsors{
+        padding: 100px;
+    }
+
+}
+@media only screen and (min-width:321px) and (max-width:768px){
+    .contact{
+		padding-bottom: 60px;
+	}
+	.for-bottom{
+		display: flex;
+   		 flex-direction: row;
+    	justify-content: center;
+	}
+	.contact h1{
+		display: flex;
+		justify-content: center;
+	}
+    .col-lg-6 img{
+        width: 460px;
+        margin: 0;
+        padding: 0;
+        margin: auto;
+    }
+    .card{
+        height: 500px;
+        margin: 20px auto;
+        justify-content: center;
+        
+    }
+    body > section.our-team > div > div > div:nth-child(1) > div > div > div.meet > p.job.mb-0{
+        padding: 0 120px;
+    }
+    .job{
+        padding: 0 125px;
+    }
+    .user{
+        padding: 0 140px;
+    }
+   
+    .social-media{
+        text-align: center;
+    }
+    .card-body{
+        display: flex;
+        flex-direction: column;
+    }
+    .sponsors{
+        padding: 100px;
+    }
+}
+.lni{
+    box-sizing: border-box;
+    padding: 8px;
+    margin: 0 5px;
+    margin-block-start: 10px;
+    border-radius: 50%;
+    border: 1px solid rgba(128, 128, 128, 0.308);
+}
+.lni:hover{
+    background-color:#3080e3;
+    color: white;
+}
+.our-team p:nth-of-type(2){
+ font-family: 'Poppins';
+ color: gray;
+ font-size: 15px;
+}
+.triangle{
+    position: absolute;
+    top: 0;
+    left: -30px;
+    height: 90px;
+    width: 90px;
+}
+.lays{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+.reviews{
+    font-family: 'Poppins';
+}
+.owl-theme .owl-dots .owl-dot span {
+    width: 10px !important;
+    height: 5px !important;
+    margin: 5px 7px;
+    background: #D6D6D6;
+    display: block;
+    
+    transition: opacity .2s ease;
+    
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #3080e3 !important;
+    width: 25px !important;
+    height: 5px !important; 
+}
+#button {
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    background-color:#3080e3;
+    width: 50px;
+    color: white;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+
+  #button:hover {
+    cursor: pointer;
+    background-color:orange;
+  }
+  #button:active {
+    background-color: orange;
+  }
+  #button.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  input:focus{
+    border-color: blue !important;
+  }
+  .people-img p{
+    margin-top:0;
+    margin-block-end: 5px;
+  }
