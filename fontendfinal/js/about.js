@@ -18,11 +18,7 @@ window.onscroll = function() {
 
     }
 };
-/*var dropDownbutton = document.getElementsByClassName('dropbtn');
-var dropDownContent= document.getElementsByClassName('dropdown-content');
-dropDownbutton.addEventListener("onmouseover", function showmenu(){
-    dropDownContent.style.display="block";
-},3000);*/
+
 $(".drop-home").on("mouseover", function () {
     $(".for-home").addClass('d-block');
     

@@ -1,3 +1,4 @@
+
 AOS.init();
 document.querySelector(".mini-orange").style.filter = "invert(90%) sepia(45%) saturate(4968%) hue-rotate(317deg) brightness(101%) contrast(101%)";
 document.querySelector(".mini-pink").style.filter = "invert(52%) sepia(45%) saturate(4958%) hue-rotate(317deg) brightness(101%) contrast(101%) ";
@@ -7,6 +8,7 @@ window.onscroll = function() {
     var sticky = header.offsetTop;
     if (window.pageYOffset > sticky) {
         header.style.background = "white";
+        header.style.boxShadow="0px 7px 29px 0px rgba(100, 100, 111, 0.2)";
         document.querySelector(".signingbutton").style.background = " #3080E3";
         document.querySelector(".whi").style.color = "white";
         document.getElementById("toblack").style.color = "black";

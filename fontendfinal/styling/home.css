@@ -4,6 +4,10 @@ body {
   overflow-x: hidden;
 }
 
+.navbarNav {
+  color: black;
+}
+
 .navbar {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -399,6 +403,18 @@ section {
   font-size: 14px;
 }
 
+nav {
+  padding: 20px 0 !important;
+}
+
+.zoomthis {
+  transition: all 0.3s ease;
+}
+.zoomthis:hover {
+  transition: all 0.3s ease;
+  letter-spacing: 3px !important;
+}
+
 .reviews {
   margin: auto;
 }
@@ -560,71 +576,22 @@ footer form .clicker {
 }
 
 @media only screen and (max-width: 600px) {
-  nav {
-    overflow-y: hidden;
-    width: 100%;
-  }
-  .navbar-nav {
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    position: relative;
-    top: 15px !important;
-  }
-  .navbar .nav-link {
-    padding: 15px 30px !important;
-  }
-  .circle-1 {
-    display: none;
-  }
-  .circle-2 {
-    display: none;
-  }
-  .circle-3 {
-    display: none;
-  }
-  .circle-4 {
-    display: none;
-  }
-  .circle-5 {
-    display: none;
-  }
-  .shape1 {
-    display: none;
-  }
-  .shape2 {
-    display: none;
-  }
-  .showcase {
-    text-align: center;
-    padding: 150px 0px 50px;
-  }
-  .intro h3 {
-    font-size: 25px;
-  }
-  .item {
-    margin-bottom: 25px;
-  }
-  .applier {
-    display: flex;
-    flex-direction: column;
-    padding: 25px;
-  }
-  .applier .clicker {
-    width: 100%;
-    text-align: center;
-  }
-  .applier h2 {
-    margin-bottom: 25px;
-    text-align: center;
-  }
-}
-@media only screen and (min-width: 321px) and (max-width: 768px) {
   body > footer > div > div > div.col-lg-3.offset-lg-1.subscribe {
     text-align: center;
   }
+  body > footer > div > div > div.col-lg-3.offset-lg-1.subscribe > form > button {
+    position: absolute;
+    top: -15px;
+  }
   body > footer > div > div > div.col-lg-4.mb-4.mb-lg-0 {
     text-align: center;
+  }
+  .bl {
+    display: none !important;
+    display: none !important;
+  }
+  #navbarNav > div > a.nav-link.d-block.d-lg-none.or {
+    display: none !important;
   }
   .linkler {
     text-align: center !important;
@@ -706,7 +673,6 @@ nav .nav-link:hover {
 .reviews {
   background-color: #f4f7fa;
 }
-
 .reviews .revi-one {
   padding: 60px 50px;
   background-color: white;
@@ -714,13 +680,11 @@ nav .nav-link:hover {
   border-radius: 5px;
   overflow: hidden;
 }
-
 .reviews .revi-one .testi-text {
   color: black;
   font-weight: bold;
   margin-bottom: 30px;
 }
-
 .reviews .revi-one .person img {
   width: 60px;
   height: 60px;
@@ -728,17 +692,14 @@ nav .nav-link:hover {
      object-fit: cover;
   margin-right: 20px;
 }
-
 .reviews .revi-one .person p {
   font-weight: bolder;
   margin-bottom: 0px;
 }
-
 .reviews .revi-one .person span {
   font-size: 14px;
   color: #3080e3;
 }
-
 .reviews .revi-one .circle1 {
   width: 70px;
   height: 70px;
@@ -748,7 +709,6 @@ nav .nav-link:hover {
   top: -35px;
   left: 40px;
 }
-
 .reviews .revi-one .circle2 {
   width: 70px;
   height: 70px;
@@ -758,7 +718,6 @@ nav .nav-link:hover {
   bottom: -15px;
   right: -15px;
 }
-
 .reviews .revi-one .arrow {
   position: absolute;
   width: 85px;
@@ -789,6 +748,9 @@ nav .nav-link:hover {
 .dropdown {
   display: inline-block;
 }
+.dropdown:hover .dropbtn {
+  background-color: white;
+}
 
 .dropdown-content {
   position: absolute;
@@ -807,7 +769,6 @@ nav .nav-link:hover {
   line-height: 1.5;
   margin-top: 0 !important;
 }
-
 .dropdown-content a {
   margin-bottom: 2px;
   padding: 0;
@@ -824,19 +785,13 @@ nav .nav-link:hover {
   transition: all 0.1s ease;
   text-decoration: none;
 }
-
 .dropdown-content a:hover {
   background-color: #f1f1f1;
-}
-
-.dropdown:hover .dropbtn {
-  background-color: white;
 }
 
 footer .section {
   padding: 0;
 }
-
 footer h2 {
   font-size: 17px !important;
   font-weight: 600;
@@ -844,7 +799,6 @@ footer h2 {
   margin-bottom: 35px;
   color: #151515;
 }
-
 footer form .clicker {
   height: 42px !important;
   width: 42px !important;
@@ -874,12 +828,10 @@ footer form .clicker {
   visibility: hidden;
   z-index: 1000;
 }
-
 #button:hover {
   cursor: pointer;
   background-color: orange;
 }
-
 #button:active {
   background-color: orange;
 }

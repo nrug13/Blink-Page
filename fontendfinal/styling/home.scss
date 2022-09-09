@@ -4,6 +4,9 @@ body{
     font-family: 'Roboto';
     overflow-x: hidden;
 }
+.navbarNav{
+	color: black;
+}
 .navbar {
 	padding-top: 30px;
 	padding-bottom: 30px;
@@ -426,6 +429,17 @@ section {
 	}
 	
 }
+nav{
+	padding: 20px 0 !important;
+}
+.zoomthis {
+	transition: all 0.3s ease;
+	&:hover {
+		transition: all 0.3s ease;
+		letter-spacing: 3px !important;
+	}
+}
+
 .reviews {
 	margin: auto;
 	.review {
@@ -459,6 +473,7 @@ section {
 	color: white;
 
 }
+
 .blogs{
 	.blog {
 		border-radius: 10px;
@@ -592,86 +607,45 @@ footer {
 	transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   }
 @media only screen and (max-width: 600px) {
-	nav{
-		overflow-y: hidden;
-		width: 100%;
-	}
-	.navbar-nav {
-		background-color: white;
-		border-radius: 5px;
-		box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-		position: relative;
-		top: 15px !important;
-		
-	}
-	.navbar {
-		.nav-link {
-			padding: 15px 30px !important;
+	body {
+		>footer {
+			>div {
+				>div {
+					>div.col-lg-3.offset-lg-1.subscribe {
+						>form {
+							>button {
+								position: absolute;
+								top: -15px;
+							}
+						}
+						text-align: center;
+					}
+					>div.col-lg-4.mb-4.mb-lg-0 {
+						text-align: center;
+					}
+				}
+			}
 		}
 	}
-	.circle-1 {
-		display: none;
+	.bl {
+		display: none !important;
+		display: none !important;
 	}
-	.circle-2 {
-		display: none;
-	}
-	.circle-3 {
-		display: none;
-	}
-	.circle-4 {
-		display: none;
-	}
-	.circle-5 {
-		display: none;
-	}
-	.shape1 {
-		display: none;
-	}
-	.shape2 {
-		display: none;
-	}
-	.showcase {
-		text-align: center;
-		padding: 150px 0px 50px;
-	}
-	.intro {
-		h3 {
-			font-size: 25px;
+	#navbarNav {
+		>div {
+			>a.nav-link.d-block.d-lg-none.or {
+				display: none !important;
+			}
 		}
 	}
-	.item {
-		margin-bottom: 25px;
-	}
-	.applier {
-		display: flex;
-		flex-direction: column;
-		padding: 25px;
-		.clicker {
-			width: 100%;
-			text-align: center;
-		}
-		h2 {
-			margin-bottom: 25px;
-			text-align: center;
-		}
-	}
-
-
-}
-
-@media only screen and (min-width:321px) and (max-width:768px){
-	body > footer > div > div > div.col-lg-3.offset-lg-1.subscribe{
-		text-align: center;
-	}
-	body > footer > div > div > div.col-lg-4.mb-4.mb-lg-0{
-		text-align: center;
-	}
-	.linkler{
+	.linkler {
 		text-align: center !important;
 	}
-	.clicker{
+	.clicker {
 		margin-top: 20px;
 	}
+	
+	
 	nav{
 		overflow-y: hidden;
 		width: 100%;
@@ -736,7 +710,10 @@ footer {
 		}
 	}
 
+
 }
+
+
 nav .nav-link:hover{
 	color:#3080e3 !important;
 	
@@ -749,57 +726,60 @@ nav .nav-link:hover{
 }
 .reviews {
 	background-color: #f4f7fa;
-  }
-  .reviews .revi-one {
-	padding: 60px 50px;
-	background-color: white;
-	position: relative;
-	border-radius: 5px;
-	overflow: hidden;
-  }
-  .reviews .revi-one .testi-text {
-	color: black;
-	font-weight: bold;
-	margin-bottom: 30px;
-  }
-  .reviews .revi-one .person img {
-	width: 60px;
-	height: 60px;
-	object-fit: cover;
-	margin-right: 20px;
-  }
-  .reviews .revi-one .person p {
-	font-weight: bolder;
-	margin-bottom: 0px;
-  }
-  .reviews .revi-one .person span {
-	font-size: 14px;
-	color: #3080e3;
-  }
-  .reviews .revi-one .circle1 {
-	width: 70px;
-	height: 70px;
-	background-color: #fab8c4;
-	border-radius: 50%;
-	position: absolute;
-	top: -35px;
-	left: 40px;
-  }
-  .reviews .revi-one .circle2 {
-	width: 70px;
-	height: 70px;
-	background-color: #ffa842;
-	border-radius: 50%;
-	position: absolute;
-	bottom: -15px;
-	right: -15px;
-  }
-  .reviews .revi-one .arrow {
-	position: absolute;
-	width: 85px;
-	bottom: -20px;
-	right: -20px;
-  }
+	.revi-one {
+		padding: 60px 50px;
+		background-color: white;
+		position: relative;
+		border-radius: 5px;
+		overflow: hidden;
+		.testi-text {
+			color: black;
+			font-weight: bold;
+			margin-bottom: 30px;
+		}
+		.person {
+			img {
+				width: 60px;
+				height: 60px;
+				object-fit: cover;
+				margin-right: 20px;
+			}
+			p {
+				font-weight: bolder;
+				margin-bottom: 0px;
+			}
+			span {
+				font-size: 14px;
+				color: #3080e3;
+			}
+		}
+		.circle1 {
+			width: 70px;
+			height: 70px;
+			background-color: #fab8c4;
+			border-radius: 50%;
+			position: absolute;
+			top: -35px;
+			left: 40px;
+		}
+		.circle2 {
+			width: 70px;
+			height: 70px;
+			background-color: #ffa842;
+			border-radius: 50%;
+			position: absolute;
+			bottom: -15px;
+			right: -15px;
+		}
+		.arrow {
+			position: absolute;
+			width: 85px;
+			bottom: -20px;
+			right: -20px;
+		}
+	}
+}
+
   .owl-theme .owl-nav.disabled + .owl-dots {
 	margin-top: 50px;
   }
@@ -818,16 +798,20 @@ nav .nav-link:hover{
     width: 25px !important;
     height: 5px !important; 
 }
-  .dropdown {
+.dropdown {
 	display: inline-block;
-  }
-  
-  .dropdown-content {
+	&:hover {
+		.dropbtn {
+			background-color: white;
+		}
+	}
+}
+.dropdown-content {
 	position: absolute;
 	top: 30px !important;
 	display: none;
-	background-color:white;
-	color:gray !important;
+	background-color: white;
+	color: gray !important;
 	z-index: 1;
 	width: max-content;
 	padding: 30px;
@@ -835,92 +819,85 @@ nav .nav-link:hover{
 	box-shadow: 0 5px 20px #0000001a;
 	min-width: 240px;
 	line-height: 1.5;
-	margin-top:0 !important;
-	
-  }
-  .dropdown-content a {
-	margin-bottom: 2px;
-	padding: 0;
-    color: #888;
-    display: block;
-    width: 100%;
-    font-size: 14px;
-    font-weight: 500;
-    text-transform: capitalize;
-    position: relative;
-    z-index: 1;
-    border-radius: 4px;
-    overflow: hidden;
-    -webkit-transition: all .1s ease;
-    transition: all .1s ease;
-	text-decoration: none;
-	
-  }
-  .dropdown-content a:hover {background-color: #f1f1f1 ;
-	 }
-  .dropdown:hover .dropdown-content {
+	margin-top: 0 !important;
+	a {
+		margin-bottom: 2px;
+		padding: 0;
+		color: #888;
+		display: block;
+		width: 100%;
+		font-size: 14px;
+		font-weight: 500;
+		text-transform: capitalize;
+		position: relative;
+		z-index: 1;
+		border-radius: 4px;
+		overflow: hidden;
+		-webkit-transition: all .1s ease;
+		transition: all .1s ease;
+		text-decoration: none;
+		&:hover {
+			background-color: #f1f1f1;
+		}
+	}
+}
 
-  }
-  .dropdown:hover .dropbtn {
-	background-color: white;
-	; 
-  }
-  .dropdown{
-	
-  }
-footer .section{
-	padding: 0;
+  footer {
+	.section {
+		padding: 0;
+	}
+	h2 {
+		font-size: 17px !important;
+		font-weight: 600;
+		display: block;
+		margin-bottom: 35px;
+		color: #151515;
+	}
+	form {
+		.clicker {
+			height: 42px !important;
+			width: 42px !important;
+			position: absolute;
+			top: 5px;
+			right: 5px;
+			padding: 1px 15px !important;
+			border: none !important;
+			border-radius: 5px;
+		}
+	}
 }
-footer h2{
-	font-size: 17px !important;
-    font-weight: 600;
-    display: block;
-    margin-bottom: 35px;
-    color: #151515;
-}
-footer form .clicker {
-	height: 42px !important;
-    width: 42px !important;
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    padding: 1px 15px !important;
-    border: none !important;
-    border-radius: 5px;
-}
+
 
 #button {
-    display: flex;
+	display: flex;
 	align-items: center;
 	justify-content: center;
-    background-color:#3080e3;
-    width: 50px;
-    color: white;
-    height: 50px;
-    text-align: center;
-    border-radius: 4px;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    transition: background-color .3s, 
-      opacity .5s, visibility .5s;
-    opacity: 0;
-    visibility: hidden;
-    z-index: 1000;
-  }
+	background-color: #3080e3;
+	width: 50px;
+	color: white;
+	height: 50px;
+	text-align: center;
+	border-radius: 4px;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	transition: background-color .3s, opacity .5s, visibility .5s;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 1000;
+	&:hover {
+		cursor: pointer;
+		background-color: orange;
+	}
+	&:active {
+		background-color: orange;
+	}
+}
+#button.show {
+	opacity: 1;
+	visibility: visible;
+}
 
-  #button:hover {
-    cursor: pointer;
-    background-color:orange;
-  }
-  #button:active {
-    background-color: orange;
-  }
-  #button.show {
-    opacity: 1;
-    visibility: visible;
-  }
-  
 
 
 
