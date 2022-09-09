@@ -5,57 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <link href="your-project-dir/icon-font/lineicons.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="http://fonts.cdnfonts.com/css/roboto" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="styling/home.css">
     <link rel="stylesheet" href="assets/css/LineIcons.3.0.css" />
     <link rel="stylesheet" href="styling/contact.css">
-    <link rel="stylesheet" href="owl.carousel.min.css">
-    <link rel="stylesheet" href="owl.theme.default.min.css">
+    <link rel="stylesheet" href="styling/owl.carousel.min.css">
+    <link rel="stylesheet" href="styling/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   </head>
-  <style>
-    .weprovide p {
-      color: gray;
-      font-size: 16px;
-      margin: 0;
-      padding: 0;
-    }
-
-    .mini {
-      background-color: #3080e3 !important;
-    }
-
-    .weprovide .item {
-      width: 415px;
-      height: 293px;
-      box-shadow: none;
-      background-color: #f4f7fa;
-      border: 1px solid #eaeaea;
-    }
-
-    .weprovide .item:hover {
-      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-      background-color: white
-    }
-
-    .mini-services {
-      padding: 0px;
-    }
-
-    .boldit {
-      font-size: 34px !important;
-      font-size: 34px;
-      margin-bottom: 25px;
-      line-height: 42px;
-      text-transform: capitalize;
-      position: relative;
-      font-weight: 700;
-    }
-  </style>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
       <div class="container x">
@@ -68,7 +28,7 @@
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
           <div class="navbar-nav">
             <div class="dropdown ">
-              <a class="nav-link dropbtn drop-home link-dark" aria-current="page" href="#">Home</a>
+              <a class="nav-link  dropbtn drop-home link-dark" aria-current="page" href="home.html">Home</a>
               <div class="dropdown-content for-home">
                 <a href="#">Saas HomePage</a>
                 <br>
@@ -87,7 +47,7 @@
                 <a href="#">Mail Success</a>
               </div>
             </div>
-            <a class="nav-link active link-dark" href="services.html">Services</a>
+            <a class="nav-link link-dark" href="services.html">Services</a>
             <div class="dropdown">
               <a class="nav-link dropbtn drop-blog link-dark" aria-current="page" href="#">Blog</a>
               <div class="dropdown-content for-blog">
@@ -95,7 +55,7 @@
                 <a href="#">Blog Single</a>
               </div>
             </div>
-            <a class="nav-link link-dark" href="contact-page.html">Contact</a>
+            <a class="nav-link active link-dark" href="contact-page.html">Contact</a>
             <a class="nav-link d-block d-lg-none bl" href="#">
               <span class="bl">Sign in</span>
             </a>
@@ -105,7 +65,7 @@
         <div class="justify-content-end signlast d-none d-lg-block">
           <div class="navbar-nav d-flex flex-row align-items-center justify-content-center">
             <a class="nav-link signin" href="#">
-              <span id="toblack">Sign in</span>
+              <span id="toblack" style="color: black;">Sign in</span>
             </a>
             <a class="nav-link signingbutton" href="#">
               <span class="whi">Sign up</span>
@@ -119,7 +79,7 @@
         <div class="row coloured">
           <div class="color cnt-us">
             <div class="col-lg-4 for-top">
-              <h1 style="color: white;">Our Services</h1>
+              <h1 style="color: white;">Contact Us</h1>
             </div>
             <div class="col-lg-4"></div>
             <div class="col-lg-4 map for-bottom">
@@ -131,7 +91,7 @@
               </div>
               <div>
                 <p>
-                  <a href="">Our Services</a>
+                  <a href="">Contact</a>
                 <p>
               </div>
             </div>
@@ -139,67 +99,63 @@
         </div>
       </div>
     </section>
-    <section class="weprovide">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-6">
-            <div class="intro">
-              <span class="just" data-aos="zoom-in" data-aos-delay="200">Services</span>
-              <h3 class="fw-bold boldit" data-aos="fade-up" data-aos-delay="400" data-aos-duration="500">Our Best Services</h3>
-              <p data-aos="fade-up" data-aos-delay="600" data-aos-duration="700"> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form. </p>
-            </div>
-          </div>
-        </div>
+    <section id="contact cont-gray-area d-flex justify-content-around" style="background-color: #f4f7fa;">
+      <div class="container ">
         <div class="row">
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400" data-aos-duration="800">
-            <div class="item blue">
-              <i class="bi bi-grid-1x2 mini"></i>
-              <h4>Design & Vreatives </h4>
-              <p> There are many variations passages of Lorem lpsum majority, some words don’t look believable. </p>
-            </div>
+          <div class="col-lg-6 d-flex justify-content-center flex-column ">
+            <form class="form" method="post" action="assets/mail/mail.php">
+              <div class="form-group d-flex flex-column">
+                <label class>Your name</label>
+                <input class="styledinput" name="name" type="text" placeholder="James Cameron" required="required">
+              </div>
+              <div class="form-group d-flex flex-column">
+                <label>Your Subject</label>
+                <input class="styledinput" name="subject" type="text" placeholder="Type your subject" required="required">
+              </div>
+              <div class="form-group d-flex flex-column">
+                <label>Email address</label>
+                <input class="styledinput clr" name="email" type="email" placeholder="james@email.com" required="required">
+              </div>
+              <div class="form-group d-flex flex-column">
+                <label>Message</label>
+                <textarea placeholder="Write your message here" name="message" id="message-area" class="form-control w-100"></textarea>
+              </div>
+              <div class="button d-flex flex-column">
+                <button type="submit" class=" mainbutton w-100 h-25 align-items-center">
+                  <span class="d-flex align-items-center justify-content-center">Send Message</span>
+                </button>
+              </div>
+            </form>
           </div>
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="600" data-aos-duration="900">
-            <div class="item orange">
-              <i class="bi bi-envelope mini"></i>
-              <h4 data-aos="fade-up">Email Marketing</h4>
-              <p> There are many variations passages of Lorem lpsum majority, some words don’t look believable. </p>
-            </div>
-          </div>
-          <div class="col-lg-4 " data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
-            <div class="item yellow">
-              <i class="bi bi-headphones mini"></i>
-              <h4>Customer Support</h4>
-              <p> Hundreds of vector cards, arrows and elements for creating quick sitemaps. </p>
-            </div>
-          </div>
-        </div>
-        <br>
-        <div class="row">
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400" data-aos-duration="800">
-            <div class="item blue">
-              <i class="bi bi-people-fill mini"></i>
-              <h4>Digital Marketing </h4>
-              <p> There are many variations passages of Lorem lpsum majority, some words don’t look believable. </p>
-            </div>
-          </div>
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="600" data-aos-duration="900">
-            <div class="item orange">
-              <i class="bi bi-tv mini"></i>
-              <h4 data-aos="fade-up">Graphics Design </h4>
-              <p> There are many variations passages of Lorem lpsum majority, some words don’t look believable. </p>
-            </div>
-          </div>
-          <div class="col-lg-4 " data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
-            <div class="item yellow">
-              <i class="bi bi-code-slash mini"></i>
-              <h4>Web Development </h4>
-              <p> There are many variations passages of Lorem lpsum majority, some words don’t look believable. </p>
+          <div class="col-lg-1"></div>
+          <div class="col-lg-5">
+            <div class="contact-text">
+              <div class="d-flex flex-column justify-content-between align-items-start">
+                <h2 class="bold-cont fw-bold	"> We are always open <br> for help you. </h2>
+                <br>
+                <p class="gray-cont"> There are many variations of passages of Lorem Ipsum available, but the majority have suffered. </p>
+                <br>
+              </div>
+              <div class="d-flex flex-column justify-content-between align-items-start">
+                <h3 class="fw-bold"> Call us </h3>
+                <p class="gray-cont">+14-394-409-591 </p>
+                <p class="gray-cont">+14-394-409-591 </p>
+                <br>
+              </div>
+              <div class="d-flex flex-column jusify-content-between">
+                <h3 class="fw-bold">Email us</h3>
+                <p class="gray-cont">info@mail.com</p>
+                <p class="gray-cont">support@mail.com</p>
+                <br>
+              </div>
+              <h3 class="fw-bold">Our Address</h3>
+              <p class="gray-cont">34 Madison Street,</p>
+              <p class="gray-cont">NY, USA 10005</p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="mini-services"></section>
     <footer>
       <div class="container">
         <div class="row">
@@ -238,13 +194,14 @@
         </div>
       </div>
     </footer>
-    <a id="button">
-      <i class="lni lni-chevron-up"></i>
+    <a id="button" class="show">
+      <i class="bi bi-chevron-up"></i>
     </a>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="owl.carousel.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script src="js/contact.js"></script>
     <script src="js/home.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </body>
 </html>

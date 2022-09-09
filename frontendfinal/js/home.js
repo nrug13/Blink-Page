@@ -1,3 +1,4 @@
+
 AOS.init();
 document.querySelector(".mini-orange").style.filter = "invert(90%) sepia(45%) saturate(4968%) hue-rotate(317deg) brightness(101%) contrast(101%)";
 document.querySelector(".mini-pink").style.filter = "invert(52%) sepia(45%) saturate(4958%) hue-rotate(317deg) brightness(101%) contrast(101%) ";
@@ -7,18 +8,29 @@ window.onscroll = function() {
     var sticky = header.offsetTop;
     if (window.pageYOffset > sticky) {
         header.style.background = "white";
+        header.style.boxShadow="0px 7px 29px 0px rgba(100, 100, 111, 0.2)";
         document.querySelector(".signingbutton").style.background = " #3080E3";
-        
-        document.getElementById("toblack").style.color = "white";
-               document.getElementById("toblack").style.color = "black";
+        document.querySelector(".whi").style.color = "white";
+        document.getElementById("toblack").style.color = "black";
         document.getElementById("toblack").addEventListener("mouseover",function fillblue(){
             document.getElementById("toblack").style.color = " #3080E3";
             document.getElementById("toblack").style.textDecoration = "underline";
         })
 
+    } else {
+        header.style.background = "transparent";
+        header.style.boxShadow="none";
+        document.querySelector(".signingbutton").style.background = " #ffff";
+        document.querySelector(".whi").style.color = "black";
+        document.getElementById("toblack").style.color = "white";
+        document.getElementById("toblack").style.textDecoration = "none";
     }
 };
-
+/*var dropDownbutton = document.getElementsByClassName('dropbtn');
+var dropDownContent= document.getElementsByClassName('dropdown-content');
+dropDownbutton.addEventListener("onmouseover", function showmenu(){
+    dropDownContent.style.display="block";
+},3000);*/
 $(".drop-home").on("mouseover", function () {
     $(".for-home").addClass('d-block');
     
@@ -103,5 +115,3 @@ $(".testimonial-carousel").owlCarousel({
     e.preventDefault();
     $('html, body').animate({scrollTop:0}, '300');
   });
-  
-  

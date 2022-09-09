@@ -63,6 +63,10 @@ body {
   background-color: #fd723b;
 }
 
+body > section.blogs > div > div:nth-child(2) > div:nth-child(2) > div > div.text {
+  padding-bottom: 49px;
+}
+
 section {
   padding: 110px 0px;
 }
